@@ -18,7 +18,9 @@
         <!-- This is known as declarative programming in HTML -->
 
         <h1>List from Array Example</h1>
-        <ul>Names:
+        <button v-on:click="addName(newName)">Add name</button>
+        <input type="text" v-model="newName" />
+        <ul>
           <li v-for="name in names">
             {{ name }}
           </li>

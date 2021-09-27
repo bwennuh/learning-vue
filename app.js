@@ -4,13 +4,17 @@ let rootComponent = {
     return {
       myName: "Brenna",
       names: ["Tyler", "Brenna", "Tosin"],
+      newName: "",
       x: 5,
       y: 10,
     }
   },
   methods: {
     addName(name) {
-      this.names.push(name)
+      if (name !== "") {
+        this.names.push(name)
+        this.newName = ""
+      }
     }
   }
 }
