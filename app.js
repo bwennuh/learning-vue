@@ -3,11 +3,14 @@ let rootComponent = {
   data() {
     return {
       name: "Brenna",
+      names: ["Tyler", "Brenna", "Tosin"],
       x: 5,
       y: 10,
     }
   }
 }
+
+//* Often times, we're going to be working with arrays of values */
 
 
 // let vue = Vue.createApp({})

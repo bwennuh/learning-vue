@@ -7,13 +7,22 @@
     </head>
     <body>
       <div id="app">
+        <h1>Hello Example</h1>
         <p>Hello, {{ name }}</p>
         <!-- Only expressions can be placed with the double curly brackets -->
 
+        <h1>Simple Math Example</h1>
         <p>x + y = ?</p>
         <p>x = {{ x }};  y = {{ y }}</p>
         <p>{{ x }} + {{ y }} = {{ x + y }}</p>
         <!-- This is known as declarative programming in HTML -->
+
+        <h1>List from Array Example</h1>
+        <ul>
+          <li v-for="name in names">
+            {{ name }}
+          </li>
+        </ul>
       </div>
     </body>
   </html>
