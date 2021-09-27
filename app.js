@@ -1,0 +1,1 @@
+let vue = Vue.createApp({})
