@@ -34,6 +34,22 @@
           </li>
           <p>My favorite people are: {{ friends.join(", ") }}</p>
         </ul>
+
+        <h1>Sorting Things Example</h1>
+        <button v-on:click="sortAlphabetically">Sort alphabetically!</button>
+        <button v-on:click="sortReverseAlphabetically">Reverse sorting alphabetically!</button>
+        <ul>
+          <li v-for="thing in things">{{ thing }}</li>
+        </ul>
+
+        <h1>List Component Example</h1>
+        <list-component :things="things" @sort="sortAlphabetically"></list-component>
+
+        <h1>Beer List Example</h1>
+        <ul>
+          <li v-for="beer in beers">{{ beer }}</li>
+        </ul>
+
       </div>
     </body>
   </html>
