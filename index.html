@@ -8,7 +8,7 @@
     <body>
       <div id="app">
         <h1>Hello Example</h1>
-        <p>Hello, {{ name }}</p>
+        <p>Hello, {{ myName }}</p>
         <!-- Only expressions can be placed with the double curly brackets -->
 
         <h1>Simple Math Example</h1>
@@ -18,7 +18,7 @@
         <!-- This is known as declarative programming in HTML -->
 
         <h1>List from Array Example</h1>
-        <ul>
+        <ul>Names:
           <li v-for="name in names">
             {{ name }}
           </li>

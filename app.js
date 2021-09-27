@@ -2,10 +2,15 @@
 let rootComponent = {
   data() {
     return {
-      name: "Brenna",
+      myName: "Brenna",
       names: ["Tyler", "Brenna", "Tosin"],
       x: 5,
       y: 10,
+    }
+  },
+  methods: {
+    addName(name) {
+      this.names.push(name)
     }
   }
 }
