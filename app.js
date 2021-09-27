@@ -5,6 +5,8 @@ let rootComponent = {
       myName: "Brenna",
       names: ["Tyler", "Brenna", "Tosin"],
       newName: "",
+      people: ["Tyler", "Brenna", "Tosin"],
+      friends: [],
       x: 5,
       y: 10,
     }

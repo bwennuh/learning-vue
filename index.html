@@ -25,6 +25,15 @@
             {{ name }}
           </li>
         </ul>
+
+        <h1>Friends List Example</h1>
+        <ul>
+          <li v-for="person, index in people">
+            <label v-bind:for="index">{{ person }}</label>
+            <input type="checkbox" v-bind:id="index" v-model="friends" v-bind:value="person">
+          </li>
+          <p>My favorite people are: {{ friends.join(", ") }}</p>
+        </ul>
       </div>
     </body>
   </html>
